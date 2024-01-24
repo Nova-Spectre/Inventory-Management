@@ -1,0 +1,28 @@
+package com.shubham.dev.orderservice.model;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+
+@Entity
+@Table(name="t_order_line_items")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class OrderLineItem {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    private String SkuCode;
+    private BigDecimal price;
+    private Integer quatity;
+
+
+}
