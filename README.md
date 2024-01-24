@@ -31,7 +31,7 @@ Elasticsearch
 Kibana
 Getting Started:
 
-Clone the repository: git clone https://github.com/your-username/Your-Inventory-Management-API.git
+Clone the repository: git clone https://github.com/shubhamp269/Inventory-Management
 Follow the setup instructions in the README.md file to configure and run the application.
 Contributing:
 We welcome contributions! If you'd like to contribute to the project, please check the contribution guidelines in the CONTRIBUTING.md file.
