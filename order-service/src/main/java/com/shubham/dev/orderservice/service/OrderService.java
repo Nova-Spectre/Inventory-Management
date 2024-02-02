@@ -77,7 +77,7 @@ public class OrderService {
 
         orderlineitem.setPrice(orderLineItemDto.getPrice());
         orderlineitem.setSkuCode(orderLineItemDto.getSkuCode());
-        orderlineitem.setQuatity(orderLineItemDto.getQuatity());
+        orderlineitem.setQuantity(orderLineItemDto.getQuantity());
 
         return orderlineitem;
     }

@@ -10,7 +10,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>org.shubham.dev</groupId>
+    <groupId>com.shubham.dev</groupId>
     <artifactId>Inventory-Management</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -19,6 +19,7 @@
         <module>order-service</module>
         <module>inventory-service</module>
         <module>discovery-server</module>
+        <module>api-gateway</module>
     </modules>
 
     <properties>

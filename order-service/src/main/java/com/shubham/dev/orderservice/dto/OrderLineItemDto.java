@@ -13,6 +13,6 @@ public class OrderLineItemDto {
     private long id;
     private String skuCode;
     private BigDecimal price;
-    private Integer quatity;
+    private Integer quantity;
 
 }

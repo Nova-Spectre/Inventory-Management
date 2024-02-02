@@ -22,7 +22,7 @@ public class OrderLineItem {
     private long id;
     private String SkuCode;
     private BigDecimal price;
-    private Integer quatity;
+    private Integer quantity;
 
 
 }
