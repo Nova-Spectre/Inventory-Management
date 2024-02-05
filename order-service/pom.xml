@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.shubham.dev</groupId>
         <artifactId>Inventory-Management</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>3.3.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>order-service</artifactId>
@@ -21,10 +21,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>3.2.2</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.2.2</version>
         </dependency>
 
         <dependency>
@@ -35,6 +37,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>4.1.0</version>
 
         </dependency>
         <dependency>
@@ -57,6 +60,7 @@
             <version>3.3.4</version>
             <scope>compile</scope>
         </dependency>
+
 
     </dependencies>
 
