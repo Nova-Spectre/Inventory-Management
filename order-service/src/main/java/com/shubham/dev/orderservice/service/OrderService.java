@@ -32,7 +32,7 @@ public class OrderService {
 
 
 
-    public void PlaceOrder(OrderRequest orderRequest){
+    public String PlaceOrder(OrderRequest orderRequest){
 
         System.out.println("OrderRequest: " + orderRequest);
         Order order=new Order();
@@ -45,7 +45,7 @@ public class OrderService {
 
         List<String> skucodes = order.getOrderLineItemList()
                 .stream().map(orderLineItem -> orderLineItem.getSkuCode()).toList();
-        System.out.println("SkuCodes :  "+"   "+skucodes);
+
 
         InventoryResponse[] inventoryResponseArray = webClientBuilder.build().get()
                 .uri(UriComponentsBuilder.fromUriString("http://inventory-service/api/inventory")
@@ -56,11 +56,12 @@ public class OrderService {
                 .block();
         boolean allProductisInStock = Arrays.stream(inventoryResponseArray).allMatch(InventoryResponse::isInStock);
 
-        System.out.println("IsInStock :  "+"   "+allProductisInStock);
+
 
 
         if(allProductisInStock){
             orderRepository.save(order);
+            return "Order Placed Successfully";
 
         }else{
             throw new IllegalArgumentException("Product is not in stock, please try again later");
