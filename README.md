@@ -5,6 +5,11 @@ Repository Name: Inventory-Management
 
 
 
+
+![Overview](https://github.com/shubhamp269/Inventory-Management/assets/51260891/49876418-e1f3-4623-ba0d-bf298d6d5bd2)
+
+
+
 Description:
 This repository contains the source code for a comprehensive Inventory Management API built using Java Spring Boot. The application utilizes MongoDB and MySQL for database management, Kafka and RabbitMQ for asynchronous messaging, Spring API Gateway for routing and filtering, and integrates Spring Security for robust authentication. Eureka is employed for service discovery, Zipkin for distributed tracing, and Elasticsearch with Kibana for efficient full-text search and log analysis.
 
