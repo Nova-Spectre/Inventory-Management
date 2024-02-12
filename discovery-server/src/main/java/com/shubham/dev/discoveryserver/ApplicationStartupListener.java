@@ -9,14 +9,24 @@ public class ApplicationStartupListener implements ApplicationListener<Applicati
 
     @Override
     public void onApplicationEvent(ApplicationReadyEvent event) {
-        // Execute your command here
-        executeCommand();
+        // Execute your Docker commands here
+        startKeycloak();
+        startZipkin();
     }
 
-    private void executeCommand() {
-        // Replace this command with your actual command
-        String command = "docker run -p 8181:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:23.0.6 start-dev";
+    private void startKeycloak() {
+        // Replace this command with your actual Keycloak Docker command
+        String keycloakCommand = "docker run -p 8181:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:23.0.6 start-dev";
+        executeCommand(keycloakCommand);
+    }
 
+    private void startZipkin() {
+        // Replace this command with your actual Zipkin Docker command
+        String zipkinCommand = "docker run -d -p 9411:9411 openzipkin/zipkin";
+        executeCommand(zipkinCommand);
+    }
+
+    private void executeCommand(String command) {
         try {
             Process process = Runtime.getRuntime().exec(command);
             int exitCode = process.waitFor();
