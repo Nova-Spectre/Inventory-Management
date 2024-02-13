@@ -7,25 +7,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="000af2f4-f3ec-47fb-a9ae-d2b53a054a92" name="Changes" comment="Resilience4j Circuit Breaker">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/logback.xml" afterDir="false" />
+    <list default="true" id="000af2f4-f3ec-47fb-a9ae-d2b53a054a92" name="Changes" comment="Micrometer Tracing using Zipkin">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/shubham/dev/notificationservice/NotificationServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/shubham/dev/notificationservice/OrderPlacedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/test/java/com/shubham/dev/notificationservice/NotificationServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/shubham/dev/orderservice/event/OrderPlacedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/com/shubham/dev/discoveryserver/ApplicationStartupListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/java/com/shubham/dev/discoveryserver/ApplicationStartupListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/shubham/dev/InventoryService/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/shubham/dev/InventoryService/service/InventoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/shubham/dev/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/shubham/dev/orderservice/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,20 +72,21 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/Spring Projects/Order Service/Inventory-Management/order-service/src/main/resources",
+    "last_opened_file_path": "E:/Spring Projects/Order Service/Inventory-Management/notification-service/src/main/resources",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Spring Projects\Order Service\Inventory-Management\notification-service\src\main\resources" />
+      <recent name="E:\Spring Projects\Order Service\Inventory-Management\notification-service" />
       <recent name="E:\Spring Projects\Order Service\Inventory-Management\order-service\src\main\resources" />
       <recent name="E:\Spring Projects\Order Service\Inventory-Management\inventory-service\src\main\resources" />
       <recent name="E:\Spring Projects\Order Service\Inventory-Management\discovery-server\src\main\resources" />
-      <recent name="E:\Spring Projects\Order Service\Inventory-Management\api-gateway\src\main\resources" />
-      <recent name="E:\Spring Projects\Order Service\Inventory-Management\api-gateway" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shubham.dev.notificationservice" />
       <recent name="com.shubham.dev.discoveryserver" />
       <recent name="com.shubham.dev.orderservice.dto" />
     </key>
@@ -107,16 +106,12 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Application.InventoryServiceApplication">
-    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ProductServiceApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.shubham.dev.apigateway.ApiGatewayApplication" />
       <module name="api-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shubham.dev.apigateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,6 +135,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.shubham.dev.InventoryService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shubham.dev.notificationservice.NotificationServiceApplication" />
+      <module name="notification-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shubham.dev.notificationservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,6 +180,12 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="ApiGatewayApplication" type="springBootConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
@@ -232,18 +246,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ApiGatewayApplication" />
+      <item itemvalue="Application.ProductServiceApplication" />
+      <item itemvalue="Application.NotificationServiceApplication" />
       <item itemvalue="Application.DiscoveryServerApplication" />
       <item itemvalue="Application.InventoryServiceApplication" />
       <item itemvalue="Application.OrderServiceApplication" />
-      <item itemvalue="Application.ProductServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InventoryServiceApplication" />
-        <item itemvalue="Application.DiscoveryServerApplication" />
+        <item itemvalue="Application.NotificationServiceApplication" />
         <item itemvalue="Application.OrderServiceApplication" />
         <item itemvalue="Application.ProductServiceApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.InventoryServiceApplication" />
+        <item itemvalue="Application.DiscoveryServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707162633497</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Micrometer Tracing using Zipkin">
+      <created>1707742003125</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707742003125</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,7 +333,8 @@
     <MESSAGE value="API Gateway" />
     <MESSAGE value="Spring Security With Keycloak" />
     <MESSAGE value="Resilience4j Circuit Breaker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resilience4j Circuit Breaker" />
+    <MESSAGE value="Micrometer Tracing using Zipkin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Micrometer Tracing using Zipkin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -9,7 +9,7 @@
 
     <!-- Configure the Micrometer Tracing logger -->
     <logger name="io.micrometer.tracing" level="DEBUG"/>
-    <logger name="org.springframework.kafka" level="DEBUG"/>
+
 
     <!-- Define the root logger to use the console appender -->
     <root level="INFO">
